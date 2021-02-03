@@ -1,9 +1,14 @@
 <?php
 
-class Home
+use App\Core\Controller;
+
+class Home extends Controller
 {
-    public function index()
+    public function index($nome = '')
     {
-        echo "Estou Na index";
+        $user = $this->model('User');
+        $user->nome = $nome;
+
+        $this->view('home/index', ['nome' => $user->nome]);
     }
 }
