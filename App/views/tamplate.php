@@ -8,6 +8,8 @@
 </head>
 
 <body>
+<h2>Bloco de Anotação</h2>
+<a href="">Criar bloco</a>
     <?php require_once '../App/views/' . $view . '.php'; ?>
 </body>
 
